@@ -9,7 +9,7 @@
   - GORM
 
 ## 📋 Documentação
-Você pode importar a collection do postman `CRUD GoLang Echo framework.postman_collection.json` que se encontra no repositorio.
+Você pode importar a collection do postman, para baixar a collection, [baixe aqui](collection/CRUD%20GoLang%20Echo%20framework.postman_collection.json)
 
 ## ⚙️ Variáveis de desenvolvimento
 
