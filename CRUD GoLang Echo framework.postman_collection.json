@@ -1,0 +1,121 @@
+{
+	"info": {
+		"_postman_id": "81d8652a-b075-4c7f-8e82-922b1a4b4546",
+		"name": "CRUD GoLang Echo framework",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10456408"
+	},
+	"item": [
+		{
+			"name": "Create Product",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Nome do produto\",\r\n    \"description\":\"Descrição do produto\",\r\n    \"price\": 1.97\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/product",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Gel All Products",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/product",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Product by Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/product/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"product",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Product by Id",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Nome do produto editado\",\r\n    \"description\":\"Descrição do produto\",\r\n    \"price\": 1.99\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/product/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"product",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Product by id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/product/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"product",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
