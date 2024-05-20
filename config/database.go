@@ -19,14 +19,14 @@ func InitDB() *gorm.DB {
 	dsn := username + ":" + password + "@tcp(" + host + ":" + port + ")/" + dbname
 
 	db, err := gorm.Open(mysql.Open(dsn), &gorm.Config{SkipDefaultTransaction: true})
+	if err != nil {
+		panic("It is not possible to connect to the database: " + err.Error())
+	}
 	if !db.Migrator().HasTable(&models.Product{}) {
 		err := db.Migrator().CreateTable(&models.Product{})
 		if err != nil {
 			panic("failed to create table")
 		}
-	}
-	if err != nil {
-		panic("Can't connect to database")
 	}
 	return db
 }
